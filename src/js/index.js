@@ -1,5 +1,6 @@
 import { queryToPixabay, getMoreImages } from './fetch_utils.js';
 import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 export const getEl = el => document.querySelector(el);
 
