@@ -10,7 +10,7 @@ async function fetchImages(query, page) {
   );
 }
 
-export async function queryToPixabay(event) {
+export async function pixabayQuary(event) {
   event.preventDefault();
   const query = event.target.elements.searchQuery.value;
   if (query === '') {
@@ -39,7 +39,7 @@ export async function queryToPixabay(event) {
   }
 }
 
-export async function getMoreImages() {
+export async function loadMore() {
   event.preventDefault();
   page += 1;
   const query = getEl('#search-form').elements.searchQuery.value;
